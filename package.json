@@ -20,6 +20,7 @@
   "scripts": {
     "preversion": "npm run type-check",
     "version": "npm run build",
+    "postversion": "npm publish --access public",
     "dev": "vite",
     "build": "run-p type-check build-only build-types",
     "build-types": "vue-tsc --project tsconfig.build.types.json",
