@@ -19,6 +19,7 @@
     "url": "https://github.com/petr-ptacek/vue-loader.git"
   },
   "homepage": "https://github.com/petr-ptacek/vue-loader.git#readme",
+  "license": "MIT",
   "exports": {
     ".": {
       "import": "./dist/vue-loader.es.js",
