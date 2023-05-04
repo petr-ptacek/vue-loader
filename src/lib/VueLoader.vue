@@ -7,24 +7,36 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 export interface Props {
   visible?: boolean;
   message?: string;
   disableMessage?: boolean;
+  zIndex?: number;
 }
 
-withDefaults(
+const props = withDefaults(
   defineProps<Props>(),
   {
-    disableMessage: false
+    disableMessage: false,
+    zIndex: 100
   }
 );
+
+const styleDeclaration = computed<Partial<CSSStyleDeclaration>>(() => {
+  return {
+    zIndex: props.zIndex.toString(10)
+  };
+});
+
 </script>
 
 <template>
   <div
     class="vue-loader"
     :class="{ 'vue-loader--hidden': !visible }"
+    :style="styleDeclaration"
   >
     <!--LOADER-->
     <div class="vue-loader__loader">
@@ -79,13 +91,9 @@ withDefaults(
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 10;
   font-size: 10px;
 
-
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.3);
-  //border-radius: 16px;
   box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
 }
