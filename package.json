@@ -15,7 +15,8 @@
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "docs"
   ],
   "scripts": {
     "preversion": "npm run type-check",
