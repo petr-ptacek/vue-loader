@@ -24,7 +24,7 @@ const props = withDefaults(
   }
 );
 
-const styleDeclaration = computed<Partial<CSSStyleDeclaration>>(() => {
+const styleDeclaration = computed<Record<string, any>>(() => {
   return {
     zIndex: props.zIndex.toString(10)
   };

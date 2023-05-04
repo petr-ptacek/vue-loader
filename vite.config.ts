@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [vue()],
   // https://vitejs.dev/guide/build.html
   build: {
+    copyPublicDir: false,
     outDir: fileURLToPath(new URL("./dist", import.meta.url)),
     lib: {
       entry: fileURLToPath(new URL("./src/lib/index.ts", import.meta.url)),
