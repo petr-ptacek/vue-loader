@@ -2,4 +2,4 @@
 
 Vue loader component for Vue3
 
-## IDE SETUP [here](./docs/IDESetup.md)
+## IDE SETUP [here](docs/IDESetup.md)

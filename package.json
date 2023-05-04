@@ -7,6 +7,12 @@
   "main": "./dist/vue-loader.umd.js",
   "module": "./dist/vue-loader.es.js",
   "types": "./dist/types/index.d.ts",
+  "keywords": [
+    "loader",
+    "preloader",
+    "vue",
+    "vue 3"
+  ],
   "exports": {
     ".": {
       "import": "./dist/vue-loader.es.js",
