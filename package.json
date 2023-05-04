@@ -1,6 +1,6 @@
 {
   "name": "@petr-ptacek/vue-loader",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Vue loader component.",
   "private": false,
   "author": "Petr Ptacek <petr.ptacek99@gmail.com>",
