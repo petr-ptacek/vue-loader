@@ -2,8 +2,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "VueLoader",
-  inheritAttrs: true
+  name: "VueLoader"
 });
 </script>
 
@@ -14,7 +13,12 @@ export interface Props {
   disableMessage?: boolean;
 }
 
-withDefaults(defineProps<Props>(), { disableMessage: false });
+withDefaults(
+  defineProps<Props>(),
+  {
+    disableMessage: false
+  }
+);
 </script>
 
 <template>
@@ -47,6 +51,7 @@ withDefaults(defineProps<Props>(), { disableMessage: false });
   --spinner-circle2--color: #27a769;
   --spinner-circle2--size: 80px;
   --spinner-circle2--duration: 1.5s;
+
   position: absolute;
   width: 100%;
   height: 100%;

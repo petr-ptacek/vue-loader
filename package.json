@@ -1,10 +1,11 @@
 {
   "name": "@petr-ptacek/vue-loader",
   "version": "1.0.0",
-  "type": "module",
   "description": "Vue loader component.",
-  "main": "./dist/vue-loader-spinner.umd.js",
-  "module": "./dist/vue-loader-spinner.es.js",
+  "private": false,
+  "type": "module",
+  "main": "./dist/vue-loader.umd.js",
+  "module": "./dist/vue-loader.es.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
@@ -13,11 +14,11 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "private": false,
   "files": [
     "dist"
   ],
   "scripts": {
+    "preversion": "npm run build",
     "dev": "vite",
     "build": "run-p type-check build-only build-types",
     "build-types": "vue-tsc --project tsconfig.build.types.json",
