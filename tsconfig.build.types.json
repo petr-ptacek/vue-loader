@@ -4,6 +4,9 @@
     "env.d.ts",
     "./src/lib/**/*"
   ],
+  "exclude": [
+    "./src/sample/**/*"
+  ],
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
