@@ -7,14 +7,8 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
-import { computed } from "vue";
-
-export interface Props {
-  visible?: boolean;
-  message?: string;
-  disableMessage?: boolean;
-  zIndex?: number;
-}
+import { computed }   from "vue";
+import type { Props } from "./types";
 
 const props = withDefaults(
   defineProps<Props>(),
