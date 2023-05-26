@@ -1,15 +1,12 @@
 {
   "extends": "./tsconfig.json",
   "include": [
-    "env.d.ts",
-    "./src/lib/**/*"
-  ],
-  "exclude": [
-    "./src/sample/**/*"
+    "../env.d.ts",
+    "*"
   ],
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "./dist/types"
+    "declarationDir": "../dist/types"
   }
 }
